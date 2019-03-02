@@ -10,7 +10,7 @@ app:
   - BITRISE_STEP_ID: theappspajamas-service-account-key-installer
   - BITRISE_STEP_VERSION: "0.0.1"
   - BITRISE_STEP_GIT_CLONE_URL: https://github.com/TheAppsPajamas/bitrise-step-theappspajamas-service-account-key-installer.git
-  - MY_STEPLIB_REPO_FORK_GIT_URL: $MY_STEPLIB_REPO_FORK_GIT_URL
+  - MY_STEPLIB_REPO_FORK_GIT_URL: https://github.com/TheAppsPajamas/bitrise-steplib
 
 workflows:
   test:
