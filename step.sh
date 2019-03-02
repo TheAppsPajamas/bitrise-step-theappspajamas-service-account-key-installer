@@ -1,5 +1,5 @@
 #!/bin/bash
-set -ex
+set -e
 
 # Required parameters
 if [ -z "${service_account_key}" ] ; then
