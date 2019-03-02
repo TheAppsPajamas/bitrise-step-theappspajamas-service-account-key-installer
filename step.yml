@@ -62,7 +62,6 @@ inputs:
       summary: TheAppsPajamas Service Account Key.
       is_required: true
       is_sensitive: true
-      value_options: []
 
   # Debug mode deactivated by default
   - bitrise_source_dir: $BITRISE_SOURCE_DIR
