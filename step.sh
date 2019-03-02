@@ -12,6 +12,7 @@ CONFIG_tap_security_path="${bitrise_source_dir}/tapsecurity.json"
 
 printf "{\n  \x22ServiceUserAccessKey\x22: \x22${service_account_key}\x22\n}" > $CONFIG_tap_security_path
 
-echo " TheAppsPajamas Service Account Key Installed to ${CONFIG_tap_security_path}"
+echo "TheAppsPajamas Service Account Key Installed to"
+echo "${CONFIG_tap_security_path}"
 
 envman add --key "TAP_SECURITY_PATH" --value "${CONFIG_tap_security_path}"
