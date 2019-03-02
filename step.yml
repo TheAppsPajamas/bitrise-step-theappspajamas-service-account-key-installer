@@ -60,7 +60,6 @@ inputs:
     opts:
       title: "TheAppsPajamas Service Account Key"
       summary: TheAppsPajamas Service Account Key.
-      is_expand: true
       is_required: true
       is_sensitive: true
       value_options: []
