@@ -49,14 +49,7 @@ is_always_run: false
 is_skippable: false
 run_if: ""
 
-deps:
-  brew:
-  - name: git
-  - name: wget
-  apt_get:
-  - name: git
-  - name: wget
-
+#deps:
 
 toolkit:
   bash:
@@ -68,30 +61,19 @@ inputs:
     opts:
       title: "TheAppsPajamas Service Account Key"
       summary: TheAppsPajamas Service Account Key.
-      description: |
-        TheAppsPajamas Service Account Key.
       is_expand: true
       is_required: true
+      is_sensitive: true
       value_options: []
 
   # Debug mode deactivated by default
-  - tap_debug_mode: "no"
+  - bitrise_source_dir: $BITRISE_SOURCE_DIR
     opts:
-      title: "Debug mode ?"
-      description: |
-        Step prints additional debug information if this option
-        is enabled
-      is_required: true
-      value_options:
-        - "yes"
-        - "no"
+      title: "Bitrise source dir"
 
 outputs:
-  #- EXAMPLE_STEP_OUTPUT:
-  #  opts:
-  #    title: "Example Step Output"
-  #    summary: Summary. No more than 2-3 sentences.
-  #    description: |
-  #      Description of this output.
+  - TAP_SECURITY_PATH:
+    opts:
+      title: "The path tapsecurity.json was installed at"      
 
-  #      Can be Markdown formatted text.
+
